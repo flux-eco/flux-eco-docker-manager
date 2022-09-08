@@ -37,7 +37,7 @@ class Service
             echo $sourceFileLocation->targetPath;
             switch ($sourceFileLocation->sourceFileSourcePathType) {
                 case Domain\Models\SourceFileSourcePathType::GZ_URL:
-                    echo exec('curl -SL "'.$sourceFileLocation->sourcePath.'" | tar -xz --strip-components=1 -C' .$sourceFileLocation->targetPath);
+                    echo exec('curl -SL '.escapeshellarg($sourceFileLocation->sourcePath).' | tar -xz --strip-components=1 -C ' .escapeshellarg($sourceFileLocation->targetPath));
                     break;
                 default:
                     throw new \Exception('unknown source location type: ' . $sourceFileLocation->sourceFileSourcePathType->value);
