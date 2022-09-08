@@ -7,13 +7,17 @@ class DockerProject
     private array $sourceFilesLocations;
 
     private function __construct(
-        public readonly string $projectId
+        public readonly string $projectId,
+        public readonly string $projectName,
+        public readonly object $scheduledDeployments
     ) {
 
     }
 
     public static function new(
-        string $projectId
+        string $projectId,
+        string $projectName,
+        object $scheduledDeployments
     ) : self {
         return new self(...get_defined_vars());
     }

@@ -1,4 +1,12 @@
+name: lmsVerkauf
+scheduledDeployments:
+  staging:
+    date: 2022-09-28
+    time: 00:00:00
 ilias:
+  container-urls:
+    staging: https://lms-staging.kkk.ch
+    prod: https://lms.kkk.ch
   composeFilePath: https://github.com/flux-eco/configurations/ilias-compose.yaml
   appDirectoryPath: './ilias-composer/storage/source-files/lmsVerkauf/ilias/'
   source-files:

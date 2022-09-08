@@ -7,8 +7,9 @@ class SourceFilesLocation
     private function __construct(
         public string $sourcePath,
         public string $targetPath,
-        public SourceFileSourcePathType $sourceFileSourcePathType
-        public readonly string $composeFilePath
+        public SourceFileSourcePathType $sourceFileSourcePathType,
+        public readonly string $composeFilePath,
+        public readonly object $containerUrls
     ) {
 
     }
@@ -17,7 +18,8 @@ class SourceFilesLocation
         string $sourcePath,
         string $targetPath,
         SourceFileSourcePathType $sourceFileSourcePathType,
-        string $composeFilePath
+        string $composeFilePath,
+        object $containerUrls
     ) : self {
         return new self(...get_defined_vars());
     }
