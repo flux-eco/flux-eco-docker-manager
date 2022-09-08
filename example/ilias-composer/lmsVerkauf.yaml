@@ -1,4 +1,5 @@
 ilias:
+  composeFilePath: https://github.com/flux-eco/configurations/ilias-compose.yaml
   appDirectoryPath: './ilias-composer/storage/source-files/lmsVerkauf/ilias/'
   source-files:
     ilias:
@@ -8,3 +9,4 @@ ilias:
       source: 'https://github.com/srsolutionsag/UserTakeOver/archive/aefb7b18790e60e748bb4726ab116fe64b2a48cc.tar.gz'
       appTargetSubPath: 'Customizing/global/plugins/Services/UIComponent/UserInterfaceHook/UserTakeOver'
 nginx:
+  composeFilePath: https://github.com/flux-eco/configurations/ilias-ninx-compose.yaml

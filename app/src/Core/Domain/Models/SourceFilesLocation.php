@@ -8,6 +8,7 @@ class SourceFilesLocation
         public string $sourcePath,
         public string $targetPath,
         public SourceFileSourcePathType $sourceFileSourcePathType
+        public readonly string $composeFilePath
     ) {
 
     }
@@ -15,7 +16,8 @@ class SourceFilesLocation
     public static function new(
         string $sourcePath,
         string $targetPath,
-        SourceFileSourcePathType $sourceFileSourcePathType
+        SourceFileSourcePathType $sourceFileSourcePathType,
+        string $composeFilePath
     ) : self {
         return new self(...get_defined_vars());
     }
