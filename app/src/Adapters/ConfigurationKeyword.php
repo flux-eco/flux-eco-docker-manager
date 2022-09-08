@@ -11,4 +11,7 @@ enum ConfigurationKeyword: string
     case CONFIGURATION_FILE_NAME = 'configuration.yaml';
     case APP_DIRECTORY_PATH = 'appDirectoryPath';
     case COMPOSE_FILE_PATH_PATH = 'composeFilePath';
+    case CONTAINER_URLS = 'container-urls';
+    case NAME = 'name';
+    case SCHEDULED_DEPLOYMENTS = 'scheduledDeployments';
 }
