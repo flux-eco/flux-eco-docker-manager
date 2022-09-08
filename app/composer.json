@@ -1,0 +1,56 @@
+{
+  "name": "flux-eco/manager",
+  "description": "Component of FluxCapacitor developed by fluxlabs",
+  "version": "0.0.1",
+  "type": "flux-app",
+  "keywords": [
+    "flux-eco",
+    "fluxlabs",
+    "manager"
+  ],
+  "homepage": "https://fluxlabs.ch",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "fluxlabs ag",
+      "email": "support@fluxlabs.ch",
+      "homepage": "https://fluxlabs.ch",
+      "role": "Maintainer, Developer"
+    }
+  ],
+  "support": {
+    "email": "support@fluxlabs.ch"
+  },
+  "repositories": [
+
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-yaml": "*",
+    "ext-simplexml": "*",
+    "composer-runtime-api": ">=2.1"
+  },
+  "require-dev": {
+    "composer/composer": ">=2.0",
+    "swoole/ide-helper": ">=4.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "FluxEco\\DockerManager\\": [
+        "src"
+        ]
+    }
+  },
+  "config": {
+    "classmap-authoritative": true,
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "platform-check": true,
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true
+    }
+  }
+}

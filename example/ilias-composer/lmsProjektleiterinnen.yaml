@@ -1,0 +1,8 @@
+appDirectoryPath: './ilias-composer/storage/source-files/lmsProjektleiterinnen/ilias/'
+source-files:
+  ilias:
+    source: 'https://github.com/ILIAS-eLearning/ILIAS/releases/download/v7.12/ILIAS-7.12.tar.gz'
+    appTargetSubPath: ''
+  plugins:
+    source: 'https://github.com/srsolutionsag/UserTakeOver/archive/aefb7b18790e60e748bb4726ab116fe64b2a48cc.tar.gz'
+    appTargetSubPath: 'Customizing/global/plugins/Services/UIComponent/UserInterfaceHook/UserTakeOver'

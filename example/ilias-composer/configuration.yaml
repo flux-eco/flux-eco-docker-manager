@@ -1,0 +1,5 @@
+projects:
+  lmsProjektleiterinnen:
+    $ref: ./lmsProjektleiterinnen.yaml
+  lmsVerkauf:
+    $ref: ./lmsVerkauf.yaml
