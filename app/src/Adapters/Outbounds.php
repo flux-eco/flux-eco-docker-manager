@@ -31,7 +31,8 @@ class Outbounds implements Core\Ports\Outbounds
                         Models\SourceFilesLocation::new(
                             $locationConfiguration[ConfigurationKeyword::SOURCE->value],
                             $composeConfiguration[ConfigurationKeyword::APP_DIRECTORY_PATH->value] . '' . $locationConfiguration[ConfigurationKeyword::APP_TARGET_SUB_PATH->value],
-                            Models\SourceFileSourcePathType::fromPath($locationConfiguration[ConfigurationKeyword::SOURCE->value])
+                            Models\SourceFileSourcePathType::fromPath($locationConfiguration[ConfigurationKeyword::SOURCE->value]),
+                            $composeConfiguration[ConfigurationKeyword::COMPOSE_FILE_PATH_PATH->value]
                         )
                     );
                 }

@@ -10,4 +10,5 @@ enum ConfigurationKeyword: string
     case SOURCE = 'source';
     case CONFIGURATION_FILE_NAME = 'configuration.yaml';
     case APP_DIRECTORY_PATH = 'appDirectoryPath';
+    case COMPOSE_FILE_PATH_PATH = 'composeFilePath';
 }
